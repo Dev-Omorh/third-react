@@ -1,15 +1,26 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import Navbar from "../components/Navbar";
+import StatsCard from "../components/StatsCard";
+import DataTable from "../components/DataTable";
+import data from "../data/data";
+
 function Dashboard() {
-  const [records, setRecords] = useState([]);
+  return (
+    <div>
+      <Navbar />
 
-  useEffect(() => {
-    fetch("YOUR_API_URL")
-      .then((res) => res.json())
-      .then((data) => setRecords(data));
-  }, []);
+      <div>
+        <div className="p-6">
+          <StatsCard title="Total Records" value={total} />
 
-  return <div>Dashboard</div>;
+          <StatsCard title="Validated" value={valid} />
+
+          <StatsCard title="Violated" value={violated} />
+        </div>
+
+        <DataTable records={data} />
+      </div>
+    </div>
+  );
 }
 
 export default Dashboard;

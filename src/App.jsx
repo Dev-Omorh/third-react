@@ -1,13 +1,9 @@
-import React from "react";
-
-import Heading from "./Heading";
-import List from "./List";
+import Dashboard from "./Dashboard";
 
 function App() {
   return (
     <div>
-      <Heading />
-      <List />
+      <Dashboard />
     </div>
   );
 }
