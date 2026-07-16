@@ -17,9 +17,9 @@ function Dashboard() {
 
   const total = data.length;
 
-  const valid = data.filter((item) => item.status === "valid").length;
+  const passed = data.filter((item) => item.status === "PASSED").length;
 
-  const violated = data.filter((item) => item.status === "violated").lenght;
+  const flagged = data.filter((item) => item.status === "FLAGGED").lenght;
 
   return (
     <div>
@@ -27,11 +27,11 @@ function Dashboard() {
 
       <div>
         <div className="p-6">
-          <StatsCard title="Total Records" value={total} />
+          <StatsCard title="TOTAL RECORDS" value={total} />
 
-          <StatsCard title="Validated" value={valid} />
+          <StatsCard title="PASSED" value={passed} />
 
-          <StatsCard title="Violated" value={violated} />
+          <StatsCard title="FLAGGED" value={flagged} />
         </div>
 
         <DataTable records={data} />
