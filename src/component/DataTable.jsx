@@ -3,7 +3,8 @@ import TableRow from "./TableRow";
 function DataTable({ records }) {
   return (
     <div>
-      <table className="w-full bg-white rounded-lg shadow overflow-hidden">
+      <table className="min-w-full border border-gray-300">
+        {/* <table className="w-full bg-white rounded-lg shadow overflow-hidden"> */}
         <thead className="bg-gray-100">
           <tr>
             <th className="p-4">Customer</th>

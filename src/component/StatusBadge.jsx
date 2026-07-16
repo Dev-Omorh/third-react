@@ -1,4 +1,4 @@
-function StatusBadge() {
+function StatusBadge({ status }) {
   return status === "valid" ? (
     <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full">
       Valid
