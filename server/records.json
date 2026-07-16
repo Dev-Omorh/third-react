@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "plantName": "Springfield Sector 7G",
+    "shiftDate": "2026-07-14",
+    "shiftType": "Night",
+    "operatorName": "Homer Simpson",
+    "productionVolume": 95,
+    "efficiencyRate": 65.2,
+    "downtimeHours": 4.5,
+    "safetyIncidents": 1,
+    "status": "FLAGGED",
+    "flagReasons": [
+      "Low production volume: 95 units (expected >= 100)",
+      "Low efficiency rate: 65.2% (expected >= 70%)",
+      "Excessive downtime: 4.5 hours (expected <= 4)",
+      "Safety incident reported: 1 incident(s)"
+    ],
+    "managerAction": null,
+    "managerReason": null,
+    "actionDate": null
+  },
+  {
+    "id": 2,
+    "plantName": "Sector 4B Reactor",
+    "shiftDate": "2026-07-15",
+    "shiftType": "Night",
+    "operatorName": "Lenny Leonard",
+    "productionVolume": 520,
+    "efficiencyRate": 92.5,
+    "downtimeHours": 0.5,
+    "safetyIncidents": 0,
+    "status": "PASSED",
+    "flagReasons": [],
+    "managerAction": null,
+    "managerReason": null,
+    "actionDate": null
+  },
+  {
+    "id": 3,
+    "plantName": "Springfield Sector 7G",
+    "shiftDate": "2026-07-15",
+    "shiftType": "Morning",
+    "operatorName": "Carl Carlson",
+    "productionVolume": 480,
+    "efficiencyRate": 88.0,
+    "downtimeHours": 1.2,
+    "safetyIncidents": 0,
+    "status": "PASSED",
+    "flagReasons": [],
+    "managerAction": null,
+    "managerReason": null,
+    "actionDate": null
+  },
+  {
+    "id": 4,
+    "plantName": "Shelbyville Hydropower",
+    "shiftDate": "2026-07-15",
+    "shiftType": "Evening",
+    "operatorName": "Ned Flanders",
+    "productionVolume": 320,
+    "efficiencyRate": 64.0,
+    "downtimeHours": 5.5,
+    "safetyIncidents": 0,
+    "status": "FLAGGED",
+    "flagReasons": [
+      "Low efficiency rate: 64% (expected >= 70%)",
+      "Excessive downtime: 5.5 hours (expected <= 4)"
+    ],
+    "managerAction": null,
+    "managerReason": null,
+    "actionDate": null
+  },
+  {
+    "id": 5,
+    "plantName": "Capital City Refinery",
+    "shiftDate": "2026-07-16",
+    "shiftType": "Morning",
+    "operatorName": "Waylon Smithers",
+    "productionVolume": 610,
+    "efficiencyRate": 95.8,
+    "downtimeHours": 0.0,
+    "safetyIncidents": 0,
+    "status": "PASSED",
+    "flagReasons": [],
+    "managerAction": null,
+    "managerReason": null,
+    "actionDate": null
+  }
+]
